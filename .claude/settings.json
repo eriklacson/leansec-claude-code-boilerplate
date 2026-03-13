@@ -1,0 +1,34 @@
+{
+  "permissions": {
+    "allow": [
+      "Read",
+      "Write(csflite/**)",
+      "Write(protocols/**)",
+      "Write(docs/**)",
+      "Write(templates/**)",
+      "Write(decisions/**)",
+      "Edit",
+      "Bash(poetry *)",
+      "Bash(npm *)",
+      "Bash(npx *)",
+      "Bash(pytest *)",
+      "Bash(python *)",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(git status)",
+      "Bash(git diff *)",
+      "Bash(git log *)"
+    ],
+    "deny": [
+      "Bash(git push *)",
+      "Bash(git remote *)",
+      "Bash(rm -rf *)",
+      "Bash(curl *)",
+      "Bash(wget *)",
+      "Write(.env*)",
+      "Write(*.key)",
+      "Write(*.pem)",
+      "Write(*.secret)"
+    ]
+  }
+}
