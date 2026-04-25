@@ -10,6 +10,8 @@ CLAUDE.md                    → Claude Code system prompt (loaded every session
 csflite/controls.json        → 25 CSFLite controls (source of truth)
 csflite/scoring.md           → Scoring methodology reference
 claude-project/              → Kit for designing specs in Claude conversations
+pyproject.toml               → Poetry config + Black/Ruff/Bandit/pytest settings
+.pre-commit-config.yaml      → Pre-commit hooks (runs on every git commit)
 setup.sh                     → Post-clone local configuration
 ```
 
@@ -23,7 +25,10 @@ cd my-project
 ./setup.sh
 ```
 
-`setup.sh` configures `.git/info/exclude` so that `.claude/` and other local-only files are never pushed from your project repo.
+`setup.sh` does three things:
+- Configures `.git/info/exclude` so `.claude/` and local-only files are never pushed from project repos
+- Installs Python dev dependencies via Poetry
+- Installs pre-commit hooks (Black, Ruff, Bandit, pytest) so every commit is automatically validated
 
 ### 2. Design the Spec
 
