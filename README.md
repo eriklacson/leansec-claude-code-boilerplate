@@ -1,6 +1,6 @@
 # Lean Security — Claude Code Project Template
 
-A reusable template for building Lean Security projects with Claude Code. Clone it, write a behavior spec, and the agent builds it — documents, CLI tools, or web applications — with CSFLite as the governing framework.
+A reusable template for building Lean Security extension projects with Claude Code. Clone it, write a behavior spec, and the agent builds it: documents, CLI tools, or web applications, with CSFLite as the governing framework and Conduit as the evidence ingestion engine.
 
 ## What's Inside
 
